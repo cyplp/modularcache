@@ -1,0 +1,8 @@
+[ModularCache]
+keys = ram
+
+
+[Cache_ram]
+module = DummyCache
+param1 = value1
+param2 = value2

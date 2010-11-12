@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+modularcache/__init__.py
+modularcache.egg-info/PKG-INFO
+modularcache.egg-info/SOURCES.txt
+modularcache.egg-info/dependency_links.txt
+modularcache.egg-info/entry_points.txt
+modularcache.egg-info/not-zip-safe
+modularcache.egg-info/top_level.txt

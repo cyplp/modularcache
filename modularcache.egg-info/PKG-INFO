@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: modularcache
+Version: 0.1dev
+Summary: cache decorator for python
+Home-page: UNKNOWN
+Author: Cyprien Le Pannérer
+Author-email: cyplp@free.fr
+License: LGPL
+Description: long long desc
+Keywords: memoize cache decorator
+Platform: UNKNOWN

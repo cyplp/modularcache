@@ -1,0 +1,6 @@
+[ModularCache]
+keys = dummy1, dummy2
+
+[Cache_dummy1]
+
+[Cache_dummy2]
