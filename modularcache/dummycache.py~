@@ -1,9 +1,0 @@
-#!/usr/bin/env path
-
-from abstractcache import AbstractCache
-
-
-class DummyCache(AbstractCache):
-"""
-TODO
-"""
