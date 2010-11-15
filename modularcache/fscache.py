@@ -31,16 +31,28 @@ class FsCache(threading.Thread, object):
        self._dir = config['dir']
        self._freq = int(config['freq'])
        self._expirationdelay = datetime.timedelta(seconds=int(config['expirationdelay']))
-
+       self._go = True
+	
        if __name__ != "__main__":
            self.start()
-       
+      
+    def stop(self):
+        """
+	Stop loop.
+	>>> f = FsCache({'dir' : 'test/cache', 'freq' :'2' ,'expirationdelay': '3'})
+	>>> f._go
+	True
+	>>> f.stop()
+	>>> f._go
+	False
+	"""
+	self._go = False
     def run(self):
         """
         Cleaning loop.
         """
 
-        while(True):
+        while(self._go):
             cacheFiles = glob.glob(os.path.join(self._dir,'*'))
             now = datetime.datetime.now()
             for i in cacheFiles:
