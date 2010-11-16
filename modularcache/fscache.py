@@ -28,13 +28,14 @@ class FsCache(threading.Thread, object):
        'test/cache'
        """ 
        threading.Thread.__init__(self)
+
+       self.setDaemon(True)
+
        self._dir = config['dir']
        self._freq = int(config['freq'])
        self._expirationdelay = datetime.timedelta(seconds=int(config['expirationdelay']))
        self._go = True
 	
-       if __name__ != "__main__":
-           self.start()
       
     def stop(self):
         """

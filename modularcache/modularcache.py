@@ -55,9 +55,11 @@ def cache(selector):
     >>> dt2 = c.c(1)
     >>> dt1 == dt2
     True
-    >>> from cachedict import CacheDict
-    >>> cd = CacheDict.getInstance()
-    >>> cd['fscache'].join(1.0)
+    >>>	dt1 is dt1
+    True
+    >>> #from cachedict import CacheDict
+    >>> #cd = CacheDict.getInstance()
+    >>> #cd['fscache'].stop()
     """
     
     def _cache(fctn):
